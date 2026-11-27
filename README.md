@@ -1,19 +1,26 @@
-# Brasil em Jogo — Simulação Política e Econômica
+# Brasil em Jogo — versão com desafios
 
-Protótipo educativo multiplayer em Node.js, Express e Socket.IO.
+Simulador escolar de política e economia com salas em tempo real.
+
+## Recursos
+- Professor cria sala; alunos entram com nome e código.
+- Professor distribui cargos políticos.
+- Banco de desafios prontos em três níveis progressivos (fácil, médio e difícil).
+- Professor também pode criar desafios personalizados para a turma.
+- Presidente apresenta propostas; professor abre e encerra a votação.
+- Após a votação, os indicadores recebem consequências didáticas simplificadas conforme o desafio e o resultado.
+- Indicadores: inflação, desemprego, aprovação e orçamento.
+
+## Executar localmente
+1. Instale Node.js 20 ou superior.
+2. No terminal, dentro da pasta do projeto, execute `npm install`.
+3. Execute `npm start`.
+4. Abra `http://localhost:3000`.
 
 ## Publicar no Render
-1. Envie esta pasta para um repositório GitHub.
-2. No Render, crie um **New > Web Service** e conecte o repositório.
-3. Build Command: `npm install`
-4. Start Command: `npm start`
-5. Escolha o plano disponível e aguarde o deploy.
+- Build Command: `npm install`
+- Start Command: `npm start`
+- Root Directory: vazio (raiz do repositório)
 
-O Render fornece um endereço público `onrender.com`.
-
-## Limitações desta versão
-- Salas e votos ficam na memória do servidor e são apagados quando o processo reinicia.
-- É um protótipo educativo: indicadores e efeitos econômicos são simplificados e fictícios.
-- O código da sala não é uma senha forte; não use dados pessoais dos alunos.
-- A versão ainda não tem banco de dados persistente, autenticação segura de professor ou análise por IA.
-- No plano gratuito do Render, o serviço pode entrar em suspensão após inatividade; a primeira abertura pode demorar.
+## Importante para uso escolar
+Os efeitos nos indicadores são fictícios e simplificados para fins pedagógicos. Não são previsões econômicas nem recomendações de política pública. As salas e seus dados ficam na memória do servidor e podem ser perdidos quando o serviço reiniciar.
